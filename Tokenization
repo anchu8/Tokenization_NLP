@@ -1,0 +1,20 @@
+import nltk
+from nltk.tokenize import word_tokenize, sent_tokenize
+from nltk.corpus import stopwords
+import string
+
+#download required NLTK resources
+nltk.download('punkt')
+nltk.download('stopwords')
+
+#Sample Text
+text = "Data science is an exciting field! It combines statistics, programming, and domain knowledge"
+
+#Tokenization
+#Sentence Tokenization
+sentences = sent_tokenize(text)
+print("Sentences:", sentences)
+
+#word_Tokenization
+words = word_tokenize(text)
+print("Words : ", words)
